@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class swap{
+    public static void main(String[] args) {
+        int c = 0 ;
+        Scanner inp = new Scanner(System.in);
+        System.out.println("Enter first: ");
+        int a = inp.nextInt();
+        System.out.println("Enter second: ");
+        int b = inp.nextInt();
+        inp.close();
+        c = a;
+        a = a % a  ;
+        a = b ;
+        b = b % b ;
+        b = c ;
+        System.out.println("Enter first: " + a);
+        System.out.println("Enter second: " + b);
+
+      }
+}
