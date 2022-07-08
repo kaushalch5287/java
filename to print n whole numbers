@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class wholenumbers{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Nth number: ");
+        int a = input.nextInt();
+        input.close();
+        for(int i = 0 ; i<=a ; i++){
+            System.out.println(i);
+        }
+       }
+}
