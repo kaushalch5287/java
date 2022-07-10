@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class ArmstrongNumber{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter the number: ");
+        int k = input.nextInt();
+        input.close();
+        int b = 0,s = 0,a;
+        a = k ;
+        while(a>0){
+    
+                b = a % 10 ;
+                a = a / 10;
+                s += b*b*b ; 
+                
+        }
+        if(s == k){
+            System.out.println("armstrong no.: ");
+        }
+        else{
+            System.out.println("not armstrong");
+        }
+        
+    }
+}
