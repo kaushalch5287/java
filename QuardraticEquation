@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public QuadraticEquation{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter the value of a: ");
+        double a = input.nextFloat();
+        System.out.print("enter the value of b: ");
+        double b = input.nextFloat();
+        System.out.print("enter the value of c: ");
+        double c = input.nextFloat();
+        input.close();
+        double d = (b*b -4*a*c);
+        if(d > 0){ 
+            double x = (-b + Math.pow(d,0.5)) /2*a ;
+            double x1 = (-b - Math.pow(d,0.5)) /2*a ;
+            System.out.println("roots are: " + x + "and" + x1);
+        }
+        else if(d == 0){
+            double x = b / 2*a ;
+            System.out.print("root is: " + x);
+        }
+        else{
+            System.out.println("roots are not real");
+        }
+    }
+}
