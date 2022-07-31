@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class StudentPresent{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter strength of class: ");
+        int a = input.nextInt();
+        System.out.println("Enter roll number of student: ");
+        int b = input.nextInt();
+        input.close();
+        int c = 0 ;
+        for(int i = 1 ; i < a + 1 ;i++){
+            if(i == b){
+                c = i ;
+            }}
+        if(c == b){
+            System.out.println("present");
+        }
+        else{
+            System.out.println("abdent");
+        
+        }
+    }
+}
