@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class po {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        double a = input.nextDouble();
+        System.out.println("enter the power digit: ");
+        double b = input.nextDouble();
+        System.out.println(Math.pow(a,b));
+    }
+    
+}
